@@ -11,18 +11,21 @@ public class StartPage {
     private SelenideElement cashButton = $(byText("Купить"));
     private SelenideElement creditButton = $(byText("Купить в кредит"));
 
+    public StartPage() {
+        openStartPage();
+    }
+
     public void openStartPage() {
         open(url);
     }
 
     public CashPayPage openCashPayPage() {
-        openStartPage();
         cashButton.click();
         return new CashPayPage();
     }
 
-    public void openCreditPayPage() {
-        openStartPage();
+    public CreditPage openCreditPayPage() {
         creditButton.click();
+        return new CreditPage();
     }
 }
