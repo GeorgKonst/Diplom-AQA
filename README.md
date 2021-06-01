@@ -4,9 +4,20 @@
 
 Планирование автоматизации:
 
-(sds)[https://github.com/GeorgKonst/Diplom-AQA/blob/master/docs/Plan.md]
+[Plan.md](https://github.com/GeorgKonst/Diplom-AQA/blob/master/docs/Plan.md)
 
-Запуск:
-1. В корневой папке проекта выполнить команду docker-compose up
-2. В корневой папке проекта выполнить команду java -jar aqa-shop.jar
+Отчетные документы по итогам тестирования:
 
+Тут будет ссылка
+
+Отчетные документы по итогам автоматизации:
+
+Тут будет ссылка
+
+Запуск приложения:
+1. Запустить Docker
+2. В корневой папке проекта выполнить команду docker-compose up
+3. В корневой папке проекта выполнить команду java -jar aqa-shop.jar
+4. Запустить автотесты командой gradlew test (Дописать)
+5. Остановить SUT комбдинацией клавиш CTRL+C
+6. Остановить и удалить контейнеры командой docker-compose down
